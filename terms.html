@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orgmind — Terms</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --ink:    #f5efe4;
+  --ink2:   #fbf7f0;
+  --ink3:   #efe4d3;
+  --ink4:   #e2d2ba;
+  --gold:   #b77b20;
+  --gold-l: #cf9540;
+  --gold-d: #865915;
+  --gold-f: rgba(183,123,32,0.08);
+  --cream:  #21170d;
+  --cream2: #43311e;
+  --cream3: #5a4935;
+  --cream4: #887661;
+  --border: rgba(134,89,21,0.16);
+  --bsoft:  rgba(33,23,13,0.08);
+  --nav-bg: rgba(251,247,240,0.9);
+  --accent-contrast: #fffaf2;
+  --sans:   'Outfit',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --serif:  'Cormorant Garamond',Georgia,serif;
+  color-scheme: light;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 4rem;background:var(--nav-bg);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--bsoft)}
+.logo{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--cream);text-decoration:none;letter-spacing:0.02em}
+.logo span{color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:2.5rem}
+.nav-r a{color:var(--cream3);text-decoration:none;font-size:0.8rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
+.nav-r a:hover{color:var(--cream)}
+.nav-trial{background:transparent!important;border:0.5px solid var(--border)!important;color:var(--gold)!important;padding:0.5rem 1.25rem!important;border-radius:2px!important;font-weight:400!important;text-transform:none!important;letter-spacing:0.04em!important;font-size:0.85rem!important;transition:all 0.2s!important}
+.nav-trial:hover{background:var(--gold-f)!important;color:var(--gold-l)!important}
+
+section{padding:7rem 4rem}
+.s-label{font-size:0.68rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;display:flex;align-items:center;gap:0.75rem}
+.s-label::before{content:'';display:block;width:20px;height:0.5px;background:var(--gold)}
+h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.4rem);font-weight:300;line-height:1.12;letter-spacing:-0.01em;color:var(--cream);margin-bottom:0.75rem}
+h2{font-family:var(--serif);font-size:1.35rem;font-weight:300;color:var(--cream);margin:2.25rem 0 0.75rem}
+p{color:var(--cream3);line-height:1.9;margin:0.75rem 0}
+ul{margin:0.75rem 0 1.25rem 1.25rem}
+li{color:var(--cream3);line-height:1.8;margin:0.35rem 0}
+a{color:var(--gold-d);text-decoration:none;border-bottom:0.5px solid rgba(134,89,21,0.25)}
+a:hover{color:var(--gold);border-bottom-color:rgba(183,123,32,0.35)}
+
+.legal-hero{padding:8rem 4rem 4rem;background:var(--ink2);border-bottom:0.5px solid var(--bsoft)}
+.legal-wrap{max-width:840px;margin:0 auto}
+.legal-meta{font-size:0.9rem;color:var(--cream4);letter-spacing:0.02em}
+.callout{background:var(--ink3);border:0.5px solid var(--bsoft);border-radius:4px;padding:1.25rem 1.5rem;margin:1.25rem 0}
+.callout strong{color:var(--cream);font-weight:500}
+.divider{height:1px;background:var(--bsoft);margin:2.25rem 0}
+
+footer{border-top:0.5px solid var(--bsoft);padding:2.5rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.f-logo{font-family:var(--serif);font-size:1.1rem;font-weight:300;color:var(--cream3);text-decoration:none}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:2rem;list-style:none}
+.f-links a{font-size:0.78rem;color:var(--cream4);text-decoration:none;transition:color 0.2s;border-bottom:none}
+.f-links a:hover{color:var(--cream3)}
+.f-copy{font-size:0.75rem;color:var(--cream4)}
+
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}
+  .nav-r a:not(.nav-trial){display:none}
+  section,.legal-hero,footer{padding-left:1.5rem;padding-right:1.5rem}
+  footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Org<span>mind</span></a>
+  <div class="nav-r">
+    <a href="index.html#journey">How it works</a>
+    <a href="index.html#verticals">Industries</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="index.html#trial" class="nav-trial">Start free trial</a>
+  </div>
+</nav>
+
+<section class="legal-hero">
+  <div class="legal-wrap">
+    <div class="s-label">Legal</div>
+    <h1>Terms</h1>
+    <div class="legal-meta">Effective date: April 21, 2026</div>
+    <div class="callout">
+      <p><strong>Plain-English note:</strong> These terms are intended for business use of Orgmind. A separate written agreement (for example, an order form, MSA, or DPA) may supersede parts of these terms.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="legal-wrap">
+    <h2>1. Acceptance</h2>
+    <p>By accessing or using Orgmind's website or services, you agree to these Terms. If you are using Orgmind on behalf of an organization, you represent that you have authority to bind that organization.</p>
+
+    <h2>2. Business use</h2>
+    <p>Orgmind is intended for business and organizational use. You are responsible for ensuring your use of Orgmind complies with applicable laws and your internal policies.</p>
+
+    <h2>3. Accounts and security</h2>
+    <ul>
+      <li>You are responsible for safeguarding account credentials and access.</li>
+      <li>You must promptly notify us of any unauthorized use or security incident related to your account.</li>
+    </ul>
+
+    <h2>4. Acceptable use</h2>
+    <p>You agree not to misuse Orgmind. This includes:</p>
+    <ul>
+      <li>Attempting to access systems or data you are not authorized to access.</li>
+      <li>Interfering with or disrupting the services.</li>
+      <li>Using Orgmind to violate laws or third-party rights.</li>
+    </ul>
+
+    <h2>5. Customer data and third-party systems</h2>
+    <p>You control which systems you connect and what data you make available to Orgmind. You represent that you have the rights and permissions needed to connect and process such data.</p>
+    <p>Third-party services (for example, Shopify, Xero, QuickBooks) are not controlled by Orgmind and have their own terms and privacy practices.</p>
+
+    <h2>6. Privacy</h2>
+    <p>Our privacy practices are described in the <a href="privacy.html">Privacy Policy</a>. Where we act as a processor/service provider for customer-connected data, a DPA may apply. See <a href="dpa.html">DPA</a>.</p>
+
+    <h2>7. Service changes</h2>
+    <p>We may modify, suspend, or discontinue parts of the services. Where reasonable, we will provide notice for material changes.</p>
+
+    <h2>8. Disclaimers</h2>
+    <p>Orgmind is provided on an "as is" and "as available" basis. To the maximum extent permitted by law, we disclaim warranties of merchantability, fitness for a particular purpose, and non-infringement.</p>
+
+    <h2>9. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, Orgmind will not be liable for indirect, incidental, special, consequential, or punitive damages, or for loss of profits, revenue, data, or goodwill.</p>
+
+    <h2>10. Termination</h2>
+    <p>We may suspend or terminate access to the services if we reasonably believe you have violated these Terms or if needed to protect the services, users, or third parties.</p>
+
+    <h2>11. Changes to these Terms</h2>
+    <p>We may update these Terms from time to time. We will post updated Terms on this page and update the effective date.</p>
+
+    <div class="divider"></div>
+    <p><strong>Questions?</strong> Email <a href="mailto:hello@orgmind.co">hello@orgmind.co</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="f-logo">Org<span>mind</span></a>
+  <ul class="f-links">
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="dpa.html">DPA</a></li>
+    <li><a href="mailto:hello@orgmind.co">hello@orgmind.co</a></li>
+  </ul>
+  <span class="f-copy">© 2026 Orgmind. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
+

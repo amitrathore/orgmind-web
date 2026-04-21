@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orgmind — Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root {
+  --ink:    #f5efe4;
+  --ink2:   #fbf7f0;
+  --ink3:   #efe4d3;
+  --ink4:   #e2d2ba;
+  --gold:   #b77b20;
+  --gold-l: #cf9540;
+  --gold-d: #865915;
+  --gold-f: rgba(183,123,32,0.08);
+  --cream:  #21170d;
+  --cream2: #43311e;
+  --cream3: #5a4935;
+  --cream4: #887661;
+  --border: rgba(134,89,21,0.16);
+  --bsoft:  rgba(33,23,13,0.08);
+  --nav-bg: rgba(251,247,240,0.9);
+  --accent-contrast: #fffaf2;
+  --sans:   'Outfit',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+  --serif:  'Cormorant Garamond',Georgia,serif;
+  color-scheme: light;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:17px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1.25rem 4rem;background:var(--nav-bg);backdrop-filter:blur(16px);border-bottom:0.5px solid var(--bsoft)}
+.logo{font-family:var(--serif);font-size:1.4rem;font-weight:300;color:var(--cream);text-decoration:none;letter-spacing:0.02em}
+.logo span{color:var(--gold)}
+.nav-r{display:flex;align-items:center;gap:2.5rem}
+.nav-r a{color:var(--cream3);text-decoration:none;font-size:0.8rem;font-weight:400;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s}
+.nav-r a:hover{color:var(--cream)}
+.nav-trial{background:transparent!important;border:0.5px solid var(--border)!important;color:var(--gold)!important;padding:0.5rem 1.25rem!important;border-radius:2px!important;font-weight:400!important;text-transform:none!important;letter-spacing:0.04em!important;font-size:0.85rem!important;transition:all 0.2s!important}
+.nav-trial:hover{background:var(--gold-f)!important;color:var(--gold-l)!important}
+
+section{padding:7rem 4rem}
+.container{max-width:1100px;margin:0 auto;width:100%}
+.s-label{font-size:0.68rem;font-weight:500;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:1.25rem;display:flex;align-items:center;gap:0.75rem}
+.s-label::before{content:'';display:block;width:20px;height:0.5px;background:var(--gold)}
+h1{font-family:var(--serif);font-size:clamp(2.4rem,4vw,3.4rem);font-weight:300;line-height:1.12;letter-spacing:-0.01em;color:var(--cream);margin-bottom:0.75rem}
+h2{font-family:var(--serif);font-size:1.35rem;font-weight:300;color:var(--cream);margin:2.25rem 0 0.75rem}
+p{color:var(--cream3);line-height:1.9;margin:0.75rem 0}
+ul{margin:0.75rem 0 1.25rem 1.25rem}
+li{color:var(--cream3);line-height:1.8;margin:0.35rem 0}
+a{color:var(--gold-d);text-decoration:none;border-bottom:0.5px solid rgba(134,89,21,0.25)}
+a:hover{color:var(--gold);border-bottom-color:rgba(183,123,32,0.35)}
+
+.legal-hero{padding:8rem 4rem 4rem;background:var(--ink2);border-bottom:0.5px solid var(--bsoft)}
+.legal-wrap{max-width:840px;margin:0 auto}
+.legal-meta{font-size:0.9rem;color:var(--cream4);letter-spacing:0.02em}
+.callout{background:var(--ink3);border:0.5px solid var(--bsoft);border-radius:4px;padding:1.25rem 1.5rem;margin:1.25rem 0}
+.callout strong{color:var(--cream);font-weight:500}
+.divider{height:1px;background:var(--bsoft);margin:2.25rem 0}
+
+footer{border-top:0.5px solid var(--bsoft);padding:2.5rem 4rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.f-logo{font-family:var(--serif);font-size:1.1rem;font-weight:300;color:var(--cream3);text-decoration:none}
+.f-logo span{color:var(--gold)}
+.f-links{display:flex;gap:2rem;list-style:none}
+.f-links a{font-size:0.78rem;color:var(--cream4);text-decoration:none;transition:color 0.2s;border-bottom:none}
+.f-links a:hover{color:var(--cream3)}
+.f-copy{font-size:0.75rem;color:var(--cream4)}
+
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}
+  .nav-r a:not(.nav-trial){display:none}
+  section,.legal-hero,footer{padding-left:1.5rem;padding-right:1.5rem}
+  footer{flex-direction:column;align-items:flex-start;padding:2rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Org<span>mind</span></a>
+  <div class="nav-r">
+    <a href="index.html#journey">How it works</a>
+    <a href="index.html#verticals">Industries</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="index.html#trial" class="nav-trial">Start free trial</a>
+  </div>
+</nav>
+
+<section class="legal-hero">
+  <div class="legal-wrap">
+    <div class="s-label">Legal</div>
+    <h1>Privacy Policy</h1>
+    <div class="legal-meta">Effective date: April 21, 2026</div>
+    <div class="callout">
+      <p><strong>Plain-English note:</strong> Orgmind is a business platform. We are the controller for our website and business contact data, and we are generally a processor/service provider for customer-connected data processed through Orgmind under customer instructions.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="legal-wrap">
+    <h2>1. Who we are</h2>
+    <p>This Privacy Policy describes how Orgmind ("Orgmind", "we", "us") collects, uses, and shares information when you visit our website, contact us, or use our services.</p>
+    <p>Privacy contact: <a href="mailto:privacy@orgmind.co">privacy@orgmind.co</a>. General contact: <a href="mailto:hello@orgmind.co">hello@orgmind.co</a>.</p>
+
+    <h2>2. Scope</h2>
+    <p>This policy covers:</p>
+    <ul>
+      <li>Website visitor information (for example, basic technical logs).</li>
+      <li>Business contact and account information (for example, trial/demo inquiries, onboarding, support).</li>
+      <li>Customer-connected data processed through Orgmind under customer instructions (to the extent it contains personal data).</li>
+    </ul>
+    <p>Customer contracts and a Data Processing Addendum (DPA) may apply to customer-connected data. For DPA availability, see <a href="dpa.html">DPA</a>.</p>
+
+    <h2>3. Information we collect</h2>
+    <p><strong>Information you provide:</strong></p>
+    <ul>
+      <li>Business contact details (name, work email, company, role) and the content of your messages when you contact us.</li>
+      <li>Support and onboarding information you choose to share with us.</li>
+    </ul>
+    <p><strong>Information collected automatically:</strong></p>
+    <ul>
+      <li>Basic device and log data (IP address, browser type, pages viewed, timestamps) used to operate and secure the website and services.</li>
+    </ul>
+    <p><strong>Customer-connected data:</strong></p>
+    <ul>
+      <li>Customers can connect Orgmind to business systems (for example, accounting, POS, CRM, ecommerce). Orgmind processes the connected data under customer instructions to provide the service.</li>
+      <li>Orgmind is designed to minimize exposure to personal data through encrypted storage, role-based access controls, audit trails, and connector-level filtering of direct identifiers where configured.</li>
+      <li>Depending on the customer systems and configuration, customer-connected data processed through Orgmind may include personal data.</li>
+    </ul>
+
+    <h2>4. How we use information</h2>
+    <ul>
+      <li>Provide, operate, secure, and maintain Orgmind.</li>
+      <li>Respond to inquiries, provide onboarding and support, and manage customer relationships.</li>
+      <li>Monitor for misuse, fraud, and security incidents, and maintain auditability.</li>
+      <li>Improve the service, including debugging and performance analysis.</li>
+      <li>Comply with legal obligations.</li>
+    </ul>
+
+    <h2>5. Legal bases (GDPR/UK GDPR)</h2>
+    <p>Where applicable, we process personal data based on:</p>
+    <ul>
+      <li>Contract (to provide the services you request).</li>
+      <li>Legitimate interests (to secure, operate, and improve the services).</li>
+      <li>Legal obligation (where required by law).</li>
+      <li>Consent (only where required for a specific purpose).</li>
+    </ul>
+
+    <h2>6. How we share information</h2>
+    <p>We may share information with:</p>
+    <ul>
+      <li>Service providers/subprocessors that help us run the website and services (for example, hosting, communications, security).</li>
+      <li>Professional advisors (for example, legal) as needed.</li>
+      <li>Authorities or other parties when required by law or to protect rights, safety, and security.</li>
+    </ul>
+    <p>We do not sell personal information. We do not share personal information for cross-context behavioral advertising, as those terms are defined under the California Consumer Privacy Act, as amended by the California Privacy Rights Act (CCPA/CPRA).</p>
+
+    <h2>7. International transfers</h2>
+    <p>Your information may be processed in countries other than where you live. Where required, we use appropriate safeguards for international transfers.</p>
+
+    <h2>8. Security</h2>
+    <p>We use administrative, technical, and organizational measures designed to protect information, including encryption in transit and at rest, access controls, and auditing. No method of transmission or storage is 100% secure.</p>
+
+    <h2>9. Retention</h2>
+    <p>We retain information only as long as needed to provide the services, operate and secure the platform, meet legal obligations, and resolve disputes. Retention periods depend on the data type and purpose.</p>
+
+    <h2>10. Your rights</h2>
+    <p>Depending on your location, you may have rights to access, correct, delete, restrict or object to processing, and request portability of your personal data. To submit a request, email <a href="mailto:privacy@orgmind.co">privacy@orgmind.co</a>.</p>
+
+    <h2>11. California disclosures (CCPA/CPRA)</h2>
+    <p>California residents may have rights to know, delete, correct, and opt out of certain processing. We do not sell personal information and do not share it for cross-context behavioral advertising. We will not discriminate against you for exercising your rights. Submit requests to <a href="mailto:privacy@orgmind.co">privacy@orgmind.co</a>.</p>
+
+    <h2>12. Children</h2>
+    <p>Orgmind is not directed to children and we do not knowingly collect personal information from children.</p>
+
+    <h2>13. Changes to this policy</h2>
+    <p>We may update this policy from time to time. We will post the updated version on this page and update the effective date.</p>
+
+    <div class="divider"></div>
+    <p><strong>Questions?</strong> Email <a href="mailto:privacy@orgmind.co">privacy@orgmind.co</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html" class="f-logo">Org<span>mind</span></a>
+  <ul class="f-links">
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="terms.html">Terms</a></li>
+    <li><a href="dpa.html">DPA</a></li>
+    <li><a href="mailto:hello@orgmind.co">hello@orgmind.co</a></li>
+  </ul>
+  <span class="f-copy">© 2026 Orgmind. All rights reserved.</span>
+</footer>
+
+</body>
+</html>
+
